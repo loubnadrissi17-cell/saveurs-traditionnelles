@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Saveurs Traditionnelles | Ramadan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f7f3;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f5132, #198754);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    .lang-switch {
+      margin-top: 15px;
+    }
+
+    .lang-switch button {
+      background: white;
+      color: #198754;
+      border: none;
+      padding: 8px 15px;
+      margin: 5px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0f5132;
+      margin-bottom: 30px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .product h3 {
+      margin-bottom: 10px;
+    }
+
+    .order-btn {
+      display: inline-block;
+      margin-top: 15px;
+      background: #198754;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .info {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #0f5132;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .ar {
+      direction: rtl;
+      font-family: 'Tahoma', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 id="title">Saveurs Traditionnelles</h1>
+  <p id="subtitle">Des salés faits maison pour un ftour réussi</p>
+
+  <div class="lang-switch">
+    <button onclick="setLang('fr')">Français</button>
+    <button onclick="setLang('ar')">العربية</button>
+  </div>
+</header>
+
+<section>
+  <h2 id="productsTitle">Nos Produits</h2>
+
+  <div class="products">
+    <div class="product">
+      <h3 id="p1">Pastilla</h3>
+      <a class="order-btn" href="https://wa.me/212657760925" target="_blank">Commander</a>
+    </div>
+    <div class="product">
+      <h3 id="p2">Briouat</h3>
+      <a class="order-btn" href="https://wa.me/212657760925" target="_blank">Commander</a>
+    </div>
+    <div class="product">
+      <h3 id="p3">Nems</h3>
+      <a class="order-btn" href="https://wa.me/212657760925" target="_blank">Commander</a>
+    </div>
+    <div class="product">
+      <h3 id="p4">Msemen</h3>
+      <a class="order-btn" href="https://wa.me/212657760925" target="_blank">Commander</a>
+    </div>
+    <div class="product">
+      <h3 id="p5">Harcha</h3>
+      <a class="order-btn" href="https://wa.me/212657760925" target="_blank">Commander</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 id="howTitle">Comment Commander</h2>
+  <div class="info" id="howText">
+    <p>📍 Casablanca</p>
+    <p>📞 Commande via WhatsApp</p>
+    <p>⏰ Merci de commander au moins 24h à l’avance</p>
+    <p>🍽️ Produits faits maison, frais et préparés avec soin</p>
+  </div>
+</section>
+
+<footer>
+  <p id="footerText">Ramadan Moubarak 🌙 | Saveurs Traditionnelles</p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.body.className = lang === 'ar' ? 'ar' : '';
+
+    if (lang === 'ar') {
+      title.innerText = "نكهات تقليدية";
+      subtitle.innerText = "مملحات منزلية لمائدة إفطار مميزة";
+      productsTitle.innerText = "منتجاتنا";
+      howTitle.innerText = "كيفية الطلب";
+      howText.innerHTML = `
+        <p>📍 الدار البيضاء</p>
+        <p>📞 الطلب عبر واتساب</p>
+        <p>⏰ المرجو الطلب قبل 24 ساعة</p>
+        <p>🍽️ منتجات منزلية طازجة وبجودة عالية</p>
+      `;
+      footerText.innerText = "رمضان مبارك 🌙 | نكهات تقليدية";
+    } else {
+      title.innerText = "Saveurs Traditionnelles";
+      subtitle.innerText = "Des salés faits maison pour un ftour réussi";
+      productsTitle.innerText = "Nos Produits";
+      howTitle.innerText = "Comment Commander";
+      howText.innerHTML = `
+        <p>📍 Casablanca</p>
+        <p>📞 Commande via WhatsApp</p>
+        <p>⏰ Merci de commander au moins 24h à l’avance</p>
+        <p>🍽️ Produits faits maison, frais et préparés avec soin</p>
+      `;
+      footerText.innerText = "Ramadan Moubarak 🌙 | Saveurs Traditionnelles";
+    }
+  }
+</script>
+
+</body>
+</html>
