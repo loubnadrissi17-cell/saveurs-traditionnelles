@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saveurs Tradi</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff8f0; }
-    header { background: #e07b39; color: white; padding: 20px; text-align: center; }
-    header h1 { margin: 0; }
-    header a { color: white; text-decoration: none; font-weight: bold; margin-left: 20px; }
-    .section { padding: 40px 20px; text-align: center; }
-    .products { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-    .product { background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); width: 250px; padding: 20px; }
-    .product img { width: 100%; border-radius: 10px; }
-    .product h3 { margin: 10px 0; }
-    .product p { margin: 5px 0; }
-    .btn { display: inline-block; padding: 10px 20px; background: #e07b39; color: white; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; }
-    footer { background: #333; color: white; text-align: center; padding: 20px; }
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#fff8f0; }
+    header { background:#e07b39; color:white; padding:20px; text-align:center; }
+    header h1 { margin:0; }
+    header a { color:white; text-decoration:none; font-weight:bold; margin-left:20px; }
+    .section { padding:40px 20px; text-align:center; }
+    h2 { color:#e07b39; }
+    .products { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
+    .product { background:white; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2); width:250px; padding:20px; }
+    .product img { width:100%; border-radius:10px; }
+    .product h3 { margin:10px 0; }
+    .product p { margin:5px 0; }
+    .btn { display:inline-block; padding:10px 20px; background:#e07b39; color:white; border-radius:5px; text-decoration:none; font-weight:bold; margin-top:10px; }
+    footer { background:#333; color:white; text-align:center; padding:20px; }
   </style>
 </head>
 <body>
@@ -26,39 +27,207 @@
   <a href="https://wa.me/212657760925" target="_blank">Commander via WhatsApp</a>
 </header>
 
+<!-- SECTION PASTILLA -->
 <section class="section">
-  <h2>✨ Offre spéciale Pastilla ✨</h2>
-  <img src="https://via.placeholder.com/500x300.png?text=Pastilla+20+pieces" alt="Pastilla 20 pièces">
-  <p>20 pièces : 10 poulet/amande + 10 fruits de mer</p>
-  <p>Goût traditionnel, produits frais</p>
-  <a href="https://wa.me/212657760925?text=Je+veux+commander+les+20+pieces+de+pastilla" class="btn">Commander maintenant</a>
-</section>
-
-<section class="section">
-  <h2>Nos produits</h2>
+  <h2>✨ Offre Pastilla ✨</h2>
   <div class="products">
+    <!-- Plateau 20 pièces -->
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Pastilla+20+pieces" alt="Pastilla 20 pièces">
+      <h3>Plateau 20 pièces</h3>
+      <p>10 Pastilla Poulet & Amande</p>
+      <p>10 Pastilla Fruits de Mer</p>
+      <p>Prix : 199 DH</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+le+plateau+20+pieces+Pastilla" class="btn">Commander</a>
+    </div>
+    <!-- Plateau 30 pièces -->
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Pastilla+30+pieces" alt="Pastilla 30 pièces">
+      <h3>Plateau 30 pièces</h3>
+      <p>15 Pastilla Poulet & Amande</p>
+      <p>15 Pastilla Fruits de Mer</p>
+      <p>Prix : 269 DH</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+le+plateau+30+pieces+Pastilla" class="btn">Commander</a>
+    </div>
+    <!-- Vente par pièce Poulet -->
     <div class="product">
       <img src="https://via.placeholder.com/250x150.png?text=Pastilla+Poulet" alt="Pastilla Poulet">
       <h3>Pastilla Poulet & Amande</h3>
-      <p>Prix : 199 DH / 10 pièces</p>
+      <p>Prix : 15 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
       <a href="https://wa.me/212657760925?text=Je+veux+commander+Pastilla+Poulet" class="btn">Commander</a>
     </div>
+    <!-- Vente par pièce Fruits de Mer -->
     <div class="product">
       <img src="https://via.placeholder.com/250x150.png?text=Pastilla+Fruits+de+Mer" alt="Pastilla Fruits de Mer">
       <h3>Pastilla Fruits de Mer</h3>
-      <p>Prix : 199 DH / 10 pièces</p>
+      <p>Prix : 19 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
       <a href="https://wa.me/212657760925?text=Je+veux+commander+Pastilla+Fruits+de+Mer" class="btn">Commander</a>
     </div>
-    <!-- Tu peux ajouter d'autres produits ici -->
   </div>
 </section>
 
+<!-- SECTION PACKS -->
 <section class="section">
-  <h2>Livraison & Contact</h2>
-  <p>Livraison disponible à Casablanca</p>
-  <p>Horaires : 10h - 22h</p>
-  <p>📞 0657 760 925</p>
-  <a href="https://wa.me/212657760925" class="btn">Commander maintenant</a>
+  <h2>📦 Packs</h2>
+  <div class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Pack+60+pieces" alt="Pack 60 pièces">
+      <h3>Pack 60 pièces variées</h3>
+      <p>Msemen nature, Msemen olives, Msemen farci, Meloui, Harcha nature, Harcha fromages</p>
+      <p>Prix : 189 DH</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+le+pack+60+pieces" class="btn">Commander</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION VENTE PAR PIÈCE -->
+<section class="section">
+  <h2>🛍 Vente par pièce</h2>
+
+  <div class="products">
+    <!-- Msemen -->
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Msemen+Nature" alt="Msemen Nature">
+      <h3>Msemen Nature</h3>
+      <p>2 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Msemen+Nature" class="btn">Commander</a>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Msemen+Olives" alt="Msemen Olives">
+      <h3>Msemen aux Olives</h3>
+      <p>2.5 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Msemen+Olives" class="btn">Commander</a>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Msemen+Farci" alt="Msemen Farci">
+      <h3>Msemen Farci Viande Hachée</h3>
+      <p>5 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Msemen+Farci" class="btn">Commander</a>
+    </div>
+
+    <!-- Meloui -->
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Meloui" alt="Meloui">
+      <h3>Meloui Nature</h3>
+      <p>3 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Meloui" class="btn">Commander</a>
+    </div>
+
+    <!-- Harcha -->
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Harcha+Nature" alt="Harcha Nature">
+      <h3>Harcha Nature</h3>
+      <p>3 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Harcha+Nature" class="btn">Commander</a>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Harcha+Fromages" alt="Harcha Fromages">
+      <h3>Harcha Fromages</h3>
+      <p>4 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Harcha+Fromages" class="btn">Commander</a>
+    </div>
+
+    <!-- Nems -->
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Nems+Viande" alt="Nems Viande">
+      <h3>Nems Viande Hachée</h3>
+      <p>10 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Nems+Viande" class="btn">Commander</a>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Nems+Poulet" alt="Nems Poulet">
+      <h3>Nems Poulet</h3>
+      <p>10 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Nems+Poulet" class="btn">Commander</a>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Nems+Fromages" alt="Nems Fromages">
+      <h3>Nems Fromages & Charcuterie</h3>
+      <p>10 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Nems+Fromages" class="btn">Commander</a>
+    </div>
+
+    <!-- Briouat -->
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Briouat+Crevettes" alt="Briouat Crevettes">
+      <h3>Briouat Crevettes</h3>
+      <p>10 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Briouat+Crevettes" class="btn">Commander</a>
+    </div>
+
+    <!-- Mini pizza -->
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Mini+Pizza+Thon" alt="Mini Pizza Thon">
+      <h3>Mini Pizza Thon</h3>
+      <p>7 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Mini+Pizza+Thon" class="btn">Commander</a>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Mini+Pizza+Viande" alt="Mini Pizza Viande">
+      <h3>Mini Pizza Viande Hachée</h3>
+      <p>7 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Mini+Pizza+Viande" class="btn">Commander</a>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Pizza+Crevettes" alt="Pizza Crevettes">
+      <h3>Pizza Crevettes</h3>
+      <p>10 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Pizza+Crevettes" class="btn">Commander</a>
+    </div>
+
+    <!-- Quiche -->
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Quiche+Poulet+Epinard" alt="Quiche Poulet Epinard">
+      <h3>Quiche Poulet Épinard</h3>
+      <p>10 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Quiche+Poulet+Epinard" class="btn">Commander</a>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Quiche+Viande" alt="Quiche Viande">
+      <h3>Quiche Viande Hachée</h3>
+      <p>10 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Quiche+Viande" class="btn">Commander</a>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Quiche+Charcuterie+Fromages" alt="Quiche Charcuterie Fromages">
+      <h3>Quiche Charcuterie & Fromages</h3>
+      <p>10 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Quiche+Charcuterie+Fromages" class="btn">Commander</a>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Quiche+Crevettes" alt="Quiche Crevettes">
+      <h3>Quiche Crevettes</h3>
+      <p>10 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Quiche+Crevettes" class="btn">Commander</a>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Quiche+Saumon" alt="Quiche Saumon">
+      <h3>Quiche Saumon</h3>
+      <p>10 DH / pièce</p>
+      <p>Minimum 6 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Quiche+Saumon" class="btn">Commander</a>
+    </div>
+
+  </div>
 </section>
 
 <footer>
