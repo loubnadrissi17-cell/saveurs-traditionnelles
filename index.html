@@ -1,91 +1,70 @@
-<!DOCTYPE html><html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saveurs Tradi – Spécial Ramadan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saveurs Tradi</title>
   <style>
-    body{margin:0;font-family:Poppins,sans-serif;background:#f8f5ef;color:#333}
-    header{background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('https://images.unsplash.com/photo-1617196037304-5e3c2aaca5f3');background-size:cover;background-position:center;color:#fff;text-align:center;padding:90px 20px}
-    header h1{font-family:'Playfair Display',serif;font-size:44px;margin-bottom:10px}
-    header p{font-size:18px;margin-bottom:30px}
-    .btn{background:#b8963e;color:#fff;padding:14px 30px;border-radius:30px;text-decoration:none;font-weight:500}
-    section{padding:70px 20px;max-width:1200px;margin:auto}
-    h2{font-family:'Playfair Display',serif;font-size:34px;text-align:center;margin-bottom:45px;color:#7a5c1c}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
-    .card{background:#fff;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.1);overflow:hidden}
-    .card img{width:100%;height:200px;object-fit:cover}
-    .card-content{padding:25px}
-    .card h3{margin-top:0;color:#7a5c1c}
-    .price{font-weight:600;color:#b8963e;margin-top:10px}
-    footer{background:#1f1f1f;color:#fff;text-align:center;padding:35px 15px}
-    footer a{color:#b8963e;text-decoration:none}
-    .ar{direction:rtl;text-align:right;margin-top:80px;color:#444}
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff8f0; }
+    header { background: #e07b39; color: white; padding: 20px; text-align: center; }
+    header h1 { margin: 0; }
+    header a { color: white; text-decoration: none; font-weight: bold; margin-left: 20px; }
+    .section { padding: 40px 20px; text-align: center; }
+    .products { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .product { background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); width: 250px; padding: 20px; }
+    .product img { width: 100%; border-radius: 10px; }
+    .product h3 { margin: 10px 0; }
+    .product p { margin: 5px 0; }
+    .btn { display: inline-block; padding: 10px 20px; background: #e07b39; color: white; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+    footer { background: #333; color: white; text-align: center; padding: 20px; }
   </style>
 </head>
-<body><header>
+<body>
+
+<header>
   <h1>Saveurs Tradi</h1>
-  <p>Cuisine traditionnelle faite maison – Spécial Ramadan</p>
-  <a class="btn" href="https://wa.me/212657760925">Commander sur WhatsApp</a>
-</header><section>
-  <h2>🥟 Pastilla</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="https://postimg.cc/Z033924J" alt="Pastilla poulet amandes">
-      <div class="card-content">
-        <h3>Plateau 20 pièces</h3>
-        <p>10 poulet & amandes<br>10 fruits de mer</p>
-        <p class="price">199 DH</p>
-      </div>
+  <a href="https://wa.me/212657760925" target="_blank">Commander via WhatsApp</a>
+</header>
+
+<section class="section">
+  <h2>✨ Offre spéciale Pastilla ✨</h2>
+  <img src="https://via.placeholder.com/500x300.png?text=Pastilla+20+pieces" alt="Pastilla 20 pièces">
+  <p>20 pièces : 10 poulet/amande + 10 fruits de mer</p>
+  <p>Goût traditionnel, produits frais</p>
+  <a href="https://wa.me/212657760925?text=Je+veux+commander+les+20+pieces+de+pastilla" class="btn">Commander maintenant</a>
+</section>
+
+<section class="section">
+  <h2>Nos produits</h2>
+  <div class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Pastilla+Poulet" alt="Pastilla Poulet">
+      <h3>Pastilla Poulet & Amande</h3>
+      <p>Prix : 199 DH / 10 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Pastilla+Poulet" class="btn">Commander</a>
     </div>
-    <div class="card">
-      <img src="https://postimg.cc/LYjdf2yK" alt="Pastilla fruits de mer">
-      <div class="card-content">
-        <h3>Plateau 30 pièces</h3>
-        <p>15 poulet & amandes<br>15 fruits de mer</p>
-        <p class="price">269 DH</p>
-      </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/250x150.png?text=Pastilla+Fruits+de+Mer" alt="Pastilla Fruits de Mer">
+      <h3>Pastilla Fruits de Mer</h3>
+      <p>Prix : 199 DH / 10 pièces</p>
+      <a href="https://wa.me/212657760925?text=Je+veux+commander+Pastilla+Fruits+de+Mer" class="btn">Commander</a>
     </div>
-    <div class="card">
-      <div class="card-content">
-        <h3>Vente par pièce</h3>
-        <p>Minimum 6 pièces</p>
-        <p>Poulet & amandes : 15 DH<br>Fruits de mer : 19 DH</p>
-      </div>
-    </div>
+    <!-- Tu peux ajouter d'autres produits ici -->
   </div>
-</section><section>
-  <h2>🌙 Pack Ramadan</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="https://postimg.cc/YhK6bkbY" alt="Pack msemen Ramadan">
-      <div class="card-content">
-        <h3>Pack 60 pièces variées</h3>
-        <p>Msemen nature & olives<br>Msemen viande hachée<br>Meloui & Harcha</p>
-        <p class="price">189 DH</p>
-      </div>
-    </div>
-  </div>
-</section><section>
-  <h2>🥞 Vente par pièce (min 6)</h2>
-  <div class="cards">
-    <div class="card"><div class="card-content"><h3>Msemen</h3><p>Nature 2 DH<br>Olives 2,5 DH<br>Viande hachée 5 DH</p></div></div>
-    <div class="card"><div class="card-content"><h3>Meloui</h3><p>Nature 3 DH</p></div></div>
-    <div class="card"><div class="card-content"><h3>Harcha</h3><p>Nature 3 DH<br>Fromage 4 DH</p></div></div>
-  </div>
-</section><section>
-  <h2>🥠 Salés & Quiches (min 6)</h2>
-  <div class="cards">
-    <div class="card"><div class="card-content"><h3>Nems</h3><p>Viande / Poulet / Fromage<br>10 DH</p></div></div>
-    <div class="card"><div class="card-content"><h3>Briouat crevettes</h3><p>10 DH</p></div></div>
-    <div class="card"><div class="card-content"><h3>Mini pizzas</h3><p>Thon & viande 7 DH<br>Crevettes 10 DH</p></div></div>
-    <div class="card"><div class="card-content"><h3>Quiches</h3><p>Poulet épinard / Viande / Fromage / Crevettes / Saumon<br>10 DH</p></div></div>
-  </div>
-</section><section class="ar">
-  <h2>سيفور ترادي – رمضان</h2>
-  <p>نقدم لكم تشكيلة راقية من المأكولات المغربية التقليدية المحضرة في البيت بعناية خاصة لشهر رمضان المبارك. الطلب متوفر عبر الواتساب مع إمكانية التوصيل.</p>
-</section><footer>
-  <p>📞 0657 760 925 | <a href="https://wa.me/212657760925">WhatsApp</a></p>
-  <p>© Saveurs Tradi – Spécial Ramadan</p>
-</footer></body>
+</section>
+
+<section class="section">
+  <h2>Livraison & Contact</h2>
+  <p>Livraison disponible à Casablanca</p>
+  <p>Horaires : 10h - 22h</p>
+  <p>📞 0657 760 925</p>
+  <a href="https://wa.me/212657760925" class="btn">Commander maintenant</a>
+</section>
+
+<footer>
+  <p>&copy; 2026 Saveurs Tradi | Tous droits réservés</p>
+  <p>Suivez-nous : <a href="#" style="color:white;">Instagram</a> | <a href="#" style="color:white;">Facebook</a></p>
+</footer>
+
+</body>
 </html>
